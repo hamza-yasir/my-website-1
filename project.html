@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Portfolio</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#art">Art</a></li>
+                <li><a href="#about">About Artist</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="section">
+            <h1>Welcome to My Art Portfolio</h1>
+            <p>Explore a curated collection of my artistic journey, showcasing a variety of styles and mediums. From delicate watercolors to bold digital creations, each piece reflects a unique aspect of my creative process. Delve into the world of my art, where every image tells a story, and every stroke holds a piece of my heart. I invite you to experience the beauty, emotion, and imagination that inspire my work.</p>
+        </section>
+        <section id="art" class="section">
+            <h2>My Art</h2>
+            <div class="carousel-container">
+                <button class="carousel-button prev" onclick="changeSlide(-1)">&#10094;</button>
+                <div class="carousel-slides">
+                    <div class="carousel-slide gallery-item" data-caption="journey to find peace">
+                        <img src="20240528_124836.jpg" alt="Art 1">
+                    </div>
+                    <div class="carousel-slide gallery-item" data-caption="Hamza">
+                        <img src="20240528_124927.jpg" alt="Art 2">
+                    </div>
+                    <div class="carousel-slide gallery-item" data-caption="my sunflower">
+                        <img src="20240528_125018.jpg" alt="Art 3">
+                    </div>
+                    <div class="carousel-slide gallery-item" data-caption="seaside">
+                        <img src="20240528_125128 (1).jpg" alt="Art 4">
+                    </div>
+                    <div class="carousel-slide gallery-item" data-caption="nature at its finest">
+                        <img src="20240528_125223.jpg" alt="Art 5">
+                    </div>
+                    <div class="carousel-slide gallery-item" data-caption="Where the stars met the mountains">
+                        <img src="IMG_20240530_212159.jpg" alt="Art 6">
+                    </div>
+                  
+                </div>
+                <button class="carousel-button next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+        </section>
+        <section id="about" class="section">
+            <h2>About the Artist</h2>
+            <p>As a self-taught female artist from Pakistan, I draw inspiration from the rich tapestry of nature, poetry, and literature. Through my art, I strive to weave together the essence of my experiences and passions, creating pieces that reflect the beauty and complexity of life.
+                Thank you for taking the time to visit my portfolio. I hope you find inspiration and joy within the pieces I've created.</p>
+        </section>
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <p>This section contains contact information.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Art Portfolio</p>
+    </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="caption"></div>
+    </div>
+
+    <script src="project.js"></script>
+</body>
+</html>
